@@ -1,0 +1,33 @@
+#VenuesCard{
+    transition: .5s ease all;
+}
+#VenuesCardcaption{
+transition: .6s ease all;
+}
+#VenuesCard:hover #serviceCardcaption{
+    top: 45%;
+}
+#VenuessectionTitle{
+    position: relative;
+    display: inline-block;
+}
+#VenuessectionTitle::after {
+    content: '';
+    position: absolute;
+    background-color: #FF6969;
+    width: 40px;
+    height: 4px;
+    top: 73px;
+    right: -60px;
+    transform: translateY(-50%);
+}
+#VenuessectionTitle::before {
+    content: '';
+    position: absolute;
+    background-color: #FF6969;
+    width: 40px;
+    height: 4px;
+    top: 73px;
+    left: -60px;
+    transform: translateY(-50%);
+}

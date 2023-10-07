@@ -13,7 +13,7 @@ const {image,id,brideName,groomName,place,ratings,description}=data;
       <h3 className='text-lg font-bold pt-1'> place : {place}</h3>
       <p>{description.slice(0,90)}...</p>
       <p className='flex justify-center items-center gap-2 text-lg font-bold'>{ratings} <AiFillStar></AiFillStar></p>
-      <Link><button className='py-2 px-6 bg-[#FF6969] text-white text-lg font-semibold rounded-md active:scale-90'>know more...</button> </Link>
+      <Link to={'/Details'}><button className='py-2 px-6 bg-[#FF6969] text-white text-lg font-semibold rounded-md active:scale-90'>know more...</button> </Link>
       </div>
     </div>
   )

@@ -35,11 +35,15 @@ import ContactPage from '../Pages/ContactPage/ContactPage';
               element: <Login></Login>,
             },
             {
-              path: "/ServiceDetails",
+              path: "/Details",
               element: <ServiceDetails></ServiceDetails>,
             },
             {
               path: "/contact",
+              element: <ContactPage></ContactPage>,
+            },
+            {
+              path: "/venues",
               element: <ContactPage></ContactPage>,
             },
           ],

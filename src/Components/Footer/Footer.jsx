@@ -15,11 +15,12 @@ const Footer = () => {
                 </div>
                 <div className='w-[38%] flex justify-end'>
                    <div>
-                   <h4 className='uppercase text-base font-semibold'>Sitemap</h4>
+                   <h4 className='uppercase text-base font-semibold'>Site map</h4>
                     <div>
                         <Link id='mainmenus' className={'font-semibold text-base   mr-2'} to={'/'}>Home</Link>
                         <Link id='mainmenus' className={'font-semibold text-base  mx-2'} to={'/about'}>about</Link>
                         <Link id='mainmenus' className={' font-semibold text-base  mx-2'} to={'/gallery'}>gallery</Link>
+                        <Link id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/contact'}>Contact Us</Link>
                     </div>
                     <div className='py-2 mt-4'>
                         <h4 className='uppercase py-2'>newsletter</h4>

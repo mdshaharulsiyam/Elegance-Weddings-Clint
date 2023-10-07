@@ -16,7 +16,7 @@ const Ourgallery = () => {
         }
       </div>
       {
-       ( galleryData.length>8) && <Link><button className='py-2 px-6 mt-8 bg-[#FF6969] text-white text-lg font-semibold rounded-md active:scale-90'>see more...</button> </Link>
+       ( galleryData.length>8) && <Link to={'/gallery'}><button className='py-2 px-6 mt-8 bg-[#FF6969] text-white text-lg font-semibold rounded-md active:scale-90'>see more...</button> </Link>
       }
     </div>
   )

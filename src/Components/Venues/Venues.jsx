@@ -14,7 +14,7 @@ const Venues = () => {
             }
           </div>
           {
-       ( venuesData.length>3) && <Link><button className='py-2 px-6 mt-8 bg-[#FF6969] text-white text-lg font-semibold rounded-md active:scale-90'>see more...</button></Link>
+       ( venuesData.length>3) && <Link to={'/venues'}><button className='py-2 px-6 mt-8 bg-[#FF6969] text-white text-lg font-semibold rounded-md active:scale-90'>see more...</button></Link>
       }
         </div>
       )

@@ -2,6 +2,9 @@ import React from 'react'
 import Banner from '../../Components/Banner/Banner'
 import Services from '../../Components/Services/Services'
 import Wellcome from '../../Components/WellCome/Wellcome'
+import Ourgallery from '../../Components/OurGallery/Ourgallery'
+import WhyChooseUs from '../../Components/WhyChooseUs/WhyChooseUs'
+import ContactUs from '../../Components/ContactUs/ContactUs'
 
 const Home = () => {
   document.title="home-Elegance Weddings"
@@ -9,7 +12,10 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <Wellcome></Wellcome>
+      <WhyChooseUs></WhyChooseUs>
       <Services></Services>
+      <Ourgallery></Ourgallery>
+      <ContactUs></ContactUs>
     </div>
   )
 }

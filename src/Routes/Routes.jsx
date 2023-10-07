@@ -10,6 +10,7 @@ import About from '../Pages/About/About';
 import Gallery from '../Pages/Gallery/Gallery';
 import Login from '../Pages/Login/Login';
 import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
+import ContactPage from '../Pages/ContactPage/ContactPage';
 
     const router = createBrowserRouter([
         {
@@ -36,6 +37,10 @@ import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
             {
               path: "/ServiceDetails",
               element: <ServiceDetails></ServiceDetails>,
+            },
+            {
+              path: "/contact",
+              element: <ContactPage></ContactPage>,
             },
           ],
         },

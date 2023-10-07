@@ -1,0 +1,24 @@
+#galleryCard{
+    transition:.5s ease all ;
+    height: 270px;
+}
+#galleryCard:hover{
+    height: 350px;
+    transition: .4s ease all;
+}
+#galleryCardImage{
+    transition: .4s ease all;
+}
+#galleryCard:hover #galleryCardImage{
+    width: 150px;
+    margin-top: -100px;
+
+}
+.content{
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease all;
+}
+#galleryCard:hover .content{
+    height: 200px;
+}

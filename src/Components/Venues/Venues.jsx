@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import { weddingContextProvider } from '../../Context/ContextProvider'
 
 const Venues = () => {
-    const {venuesData}=useContext(weddingContextProvider)
+    const {venuesData,loading}=useContext(weddingContextProvider)
+    console.log(loading)
     return (
         <div className='container mx-auto text-center'>
           <h2 id='VenuessectionTitle' className='text-5xl font-semibold italic text-[#FF6969] py-10'>venues</h2>
           <div className='flex flex-wrap justify-center items-center gap-7 py-10'>
             {
-                venuesData.slice(0,3).map(venue=> <VenuesCard key={venue.id} venue={venue}></VenuesCard>)
+              (loading)? <span className="loading loading-ring loading-lg"></span> :  venuesData.slice(0,3).map(venue=> <VenuesCard key={venue.id} venue={venue}></VenuesCard>)
             }
           </div>
           {

@@ -19,7 +19,7 @@ const Header = () => {
                             {navlinks}
                         </ul>
                     </div>
-                    <Link className=" font-extrabold  normal-case text-2xl" to={'/'}> Elegance Weddings </Link>
+                    <Link className=" font-extrabold  normal-case text-2xl" to={'/'}> Elegance Wedding’s </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

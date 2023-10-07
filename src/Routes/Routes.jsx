@@ -6,6 +6,9 @@ import {
 import Root from '../Pages/Root/Root';
 import Errorelemt from './Errorelemt';
 import Home from '../Pages/Home/Home';
+import About from '../Pages/About/About';
+import Gallery from '../Pages/Gallery/Gallery';
+import Login from '../Pages/Login/Login';
 
     const router = createBrowserRouter([
         {
@@ -16,6 +19,18 @@ import Home from '../Pages/Home/Home';
             {
               path: "/",
               element: <Home></Home>,
+            },
+            {
+              path: "/about",
+              element: <About></About>,
+            },
+            {
+              path: "/gallery",
+              element: <Gallery></Gallery>,
+            },
+            {
+              path: "/login",
+              element: <Login></Login>,
             },
           ],
         },

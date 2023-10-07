@@ -1,0 +1,46 @@
+[
+      {
+        "id": "V3nue123",
+        "category": "Venues",
+        "name": "Elegant Gardens Venue",
+        "description": "Experience the magic of an enchanting garden wedding at Elegant Gardens Venue. Nestled in the heart of nature, our venue offers a picturesque setting with lush greenery, blooming flowers, and serene surroundings. Whether you dream of an intimate ceremony or a grand celebration, our versatile spaces cater to your every need. Our experienced team is dedicated to making your special day truly memorable. Book Elegant Gardens Venue for a wedding that reflects your unique love story.",
+        "image": "https://i.ibb.co/4t2xhMk/vanues.jpg"
+      },
+      {
+        "id": "C4tering456",
+        "category": "Catering",
+        "name": "Delicious Delights Catering",
+        "description": "Indulge your senses with the culinary artistry of Delicious Delights Catering. Our expert chefs craft delectable menus tailored to your preferences, ensuring a feast that delights every palate. From elegant appetizers to decadent desserts, our catering services are designed to elevate your wedding dining experience. We prioritize quality, creativity, and impeccable service to make your wedding celebration a gastronomic delight. Choose Delicious Delights Catering for a culinary journey that complements the joy of your special day.",
+        "image": "https://i.ibb.co/bFDXy6f/catering.jpg"
+      },
+      {
+        "id": "P7hotography789",
+        "category": "Photography",
+        "name": "Captured Moments Photography",
+        "description": "Relive the magic of your wedding day through the lens of Captured Moments Photography. Our team of skilled photographers specializes in capturing the essence of your love story, from candid moments to timeless portraits. We believe in storytelling through images, creating a visual narrative that unfolds the beauty and emotion of your celebration. Trust Captured Moments Photography to document the precious moments of your wedding day, preserving memories that last a lifetime.",
+        "image": "https://i.ibb.co/7WkPbmy/photography.jpg"
+      },
+      {
+        "id": "W3ddingRgstry321",
+        "category": "Wedding Registry",
+        "name": "Happily Ever After Registry",
+        "description": "Begin your journey into wedded bliss with the Happily Ever After Registry. Create a personalized registry that reflects your unique style and aspirations as a couple. From timeless homeware to adventurous experiences, our registry offers a curated selection of gifts that your loved ones can contribute to. Start building the foundation of your new life together with the thoughtful gifts from Happily Ever After Registry.",
+        "image": "https://i.ibb.co/6PKJBN6/registry.jpg"
+      },
+      {
+        "id": "W3ddingCake789",
+        "category": "Wedding Cake",
+        "name": "Sweet Dreams Confections",
+        "description": "Savor the sweetness of love with a custom-designed wedding cake from Sweet Dreams Confections. Our skilled bakers create edible works of art that not only look exquisite but also taste divine. Whether you envision a traditional tiered cake or a modern masterpiece, we work with you to bring your cake dreams to life. Choose Sweet Dreams Confections for a wedding cake that becomes a centerpiece of your celebration.",
+        "image": "https://i.ibb.co/Fg17P3p/weddingcake.jpg"
+      },
+      {
+        "id": "Cer3monyXYZ",
+        "category": "Ceremony",
+        "name": "Enchanted Ceremony Spaces",
+        "description": "Transform your wedding ceremony into an enchanting experience with Enchanted Ceremony Spaces. Our venues are designed to create a magical ambiance for your vows. From elegant archways to ethereal lighting, every detail is curated to make your ceremony a truly unforgettable moment. Let the enchantment of our ceremony spaces set the tone for a lifetime of love and happiness. Choose Enchanted Ceremony Spaces for a wedding ceremony that transcends imagination.",
+        "image": "https://i.ibb.co/8cH62KW/creemony.jpg"
+      }
+    ]
+
+  

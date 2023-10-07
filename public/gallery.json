@@ -1,0 +1,192 @@
+[
+    {
+        "id": "R4diss0n123",
+        "place": "Radisson",
+        "placeTitle": "Qaiserbagh, Lucknow is a Banquet Hall",
+        "image": "https://i.ibb.co/ct6RgZ6/images.jpg",
+        "ratings": 4.5,
+        "brideName": "Sophia",
+        "groomName": "Alexander",
+        "description": "Experience the magic of Radisson, where dreams unfold in a setting of timeless elegance. With a rating of 4.5, this venue promises a memorable union. Sophia and Alexander celebrated their love story amidst the luxury and charm of Radisson. The lavish interiors and impeccable service created the perfect backdrop for their dream wedding."
+    },
+    {
+        "id": "S4nth0meChVrch",
+        "place": "Santhome Church",
+        "placeTitle": "Chennai, near Marina Beach",
+        "image": "https://i.ibb.co/fHwqHN6/download.jpg",
+        "ratings": 4.8,
+        "brideName": "Emma",
+        "groomName": "William",
+        "description": "Santhome Church, a sacred haven for unions, witnessed the holy matrimony of Emma and William. With a stellar rating of 4.8, this historic venue provides a divine atmosphere. The couple exchanged vows in the midst of spiritual beauty, creating an everlasting bond. Santhome Church - where every union is a sacred celebration."
+    },
+    {
+        "id": "ITCGrand456",
+        "place": "ITC Grand",
+        "placeTitle": "Goa, is Destination  Wedding Place",
+        "image": "https://i.ibb.co/N9dVhFZ/images-1.jpg",
+        "ratings": 4.7,
+        "brideName": "Isabella",
+        "groomName": "Christopher",
+        "description": "Opulence finds a new definition at ITC Grand, where Isabella and Christopher embarked on their journey of love. This venue, rated 4.7, offers a majestic backdrop for grand celebrations. Lavish banquets and regal settings create the perfect canvas for your wedding story. ITC Grand - where every moment is a masterpiece."
+    },
+    {
+        "id": "Carav3laB34ch",
+        "place": "Caravela Beach",
+        "placeTitle": "Resort",
+        "image": "https://i.ibb.co/KDwxyJJ/download-1.jpg",
+        "ratings": 4.4,
+        "brideName": "Olivia",
+        "groomName": "James",
+        "description": "Plan your beachfront wedding at Caravela Beach, where sun, sand, and sea come together to create a magical setting. Exchange vows with the sound of waves as your backdrop. Our venue provides a perfect blend of nature and luxury, making your wedding day unforgettable. Experience the charm of a seaside celebration."
+    },
+    {
+        "id": "Munj0h0c34n",
+        "place": "Munjoh Ocean",
+        "placeTitle": "Resort",
+        "image": "https://i.ibb.co/m02NfY2/download-2.jpg",
+        "ratings": 4.6,
+        "brideName": "Ava",
+        "groomName": "Daniel",
+        "description": "Experience a wedding by the ocean at Munjoh Ocean venue. With breathtaking views and pristine surroundings, Munjoh Ocean offers an idyllic setting for your special day. Our dedicated team ensures every detail is perfect, from the ceremony to the reception. Create memories that last a lifetime at Munjoh Ocean."
+    },
+    {
+        "id": "TheLe3laPalace",
+        "place": "The Leela Palace",
+        "placeTitle": "Udaipur",
+        "image": "https://i.ibb.co/4KdK86b/download-3.jpg",
+        "ratings": 4.9,
+        "brideName": "Grace",
+        "groomName": "Michael",
+        "description": "Indulge in luxury at The Leela Palace, the perfect venue for a regal wedding celebration. From opulent ballrooms to exquisite gardens, our venue offers a majestic backdrop for your special day. Immerse yourself in the grandeur of The Leela Palace and create timeless memories."
+    },
+    {
+        "id": "JagMandirPal4ce",
+        "place": "Jag Mandir Palace",
+        "placeTitle": "Udaipur",
+        "image": "https://i.ibb.co/1mMH8Bh/images-2.jpg",
+        "ratings": 4.7,
+        "brideName": "Ella",
+        "groomName": "Liam",
+        "description": "Celebrate your love story at the enchanting Jag Mandir Palace. Nestled on an island in the midst of a lake, this palace venue exudes romance and grandeur. With its rich history and architectural beauty, Jag Mandir Palace provides an extraordinary setting for your wedding celebration."
+    },
+    {
+        "id": "Fairm0n",
+        "place": "Fairmon",
+        "placeTitle": "Jaipuur",
+        "image": "https://i.ibb.co/X2K0HPx/download-4.jpg",
+        "ratings": 4.6,
+        "brideName": "Scarlett",
+        "groomName": "Benjamin",
+        "description": "Experience sophistication at Fairmon, the epitome of luxury for your wedding celebration. With stylish venues and impeccable service, Fairmon ensures an unforgettable experience. From exquisite banquets to picturesque outdoor spaces, our venue offers the perfect canvas for your love story."
+    },
+    {
+        "id": "JaiMahalPal4ce",
+        "place": "Jai Mahal Palace",
+        "placeTitle": "Jaipuur",
+        "image": "https://i.ibb.co/xGQmp7g/tushaar-and-garima-taj-jai-mahal-palace-jaipur-destination-wedding.jpg",
+        "ratings": 4.8,
+        "brideName": "Lily",
+        "groomName": "Henry",
+        "description": "Step into a world of royalty at Jai Mahal Palace, the perfect venue for a majestic wedding celebration. With its grand architecture and lush gardens, Jai Mahal Palace creates a fairy-tale setting for your special day. Let the splendor of Jai Mahal Palace be the backdrop for your love story."
+    },
+    {
+        "id": "H0telRoyal",
+        "place": "Hotel Royal",
+        "placeTitle": "Hotel Royal - Elegance Redefined",
+        "image": "https://i.ibb.co/3dgnWVd/download-5.jpg",
+        "ratings": 4.5,
+        "brideName": "Victoria",
+        "groomName": "Edward",
+        "description": "Elegance meets grandeur at Hotel Royal, a venue that redefines sophistication. Victoria and Edward chose this venue, with a rating of 4.5, to host their exquisite wedding celebration. From luxurious ballrooms to exquisite dining, Hotel Royal provides the perfect setting for an elegant affair."
+    },
+    {
+        "id": "GoldenGard3ns",
+        "place": "Golden Gardens",
+        "placeTitle": "Golden Gardens - Nature's Embrace",
+        "image": "https://i.ibb.co/BB4rjZ5/download-6.jpg",
+        "ratings": 4.6,
+        "brideName": "Amelia",
+        "groomName": "Samuel",
+        "description": "Celebrate amidst nature's embrace at Golden Gardens, a venue with lush landscapes and blooming gardens. With a rating of 4.6, this venue provides a picturesque setting for weddings. Amelia and Samuel cherished their special day surrounded by the beauty of Golden Gardens."
+    },
+    {
+        "id": "PalazzoVersace",
+        "place": "Palazzo Versace",
+        "placeTitle": "Palazzo Versace - Fashionably Yours",
+        "image": "https://i.ibb.co/55QBGhS/lead-studio-neelabh1.jpg",
+        "ratings": 4.9,
+        "brideName": "Sophie",
+        "groomName": "David",
+        "description": "For a wedding that's fashionably yours, choose Palazzo Versace. Sophie and David celebrated their love in the lap of luxury with a rating of 4.9. From opulent interiors to personalized service, Palazzo Versace ensures a wedding that reflects your unique style."
+    },
+    {
+        "id": "Whit3P4lace",
+        "place": "White Palace",
+        "placeTitle": "White Palace - Timeless Elegance",
+        "image": "https://i.ibb.co/7jDYczN/romantic-beach-wedding-crete-14.jpg",
+        "ratings": 4.7,
+        "brideName": "Grace",
+        "groomName": "Daniel",
+        "description": "Step into a world of timeless elegance at White Palace, where Grace and Daniel celebrated their love story. With a rating of 4.7, this venue offers a classic and refined setting for your wedding celebration. From exquisite ballrooms to impeccable service, create memories that last a lifetime."
+    },
+    {
+        "id": "L4k3sideM4nor",
+        "place": "Lakeside Manor",
+        "placeTitle": "Lakeside Manor - Serenity by the Lake",
+        "image": "https://i.ibb.co/txXBtLy/download-7.jpg",
+        "ratings": 4.5,
+        "brideName": "Olivia",
+        "groomName": "Benjamin",
+        "description": "Celebrate serenity by the lake at Lakeside Manor, a venue that offers tranquility and natural beauty. Olivia and Benjamin chose this venue with a rating of 4.5 to host their intimate and picturesque wedding celebration. Lakeside Manor - where love meets nature."
+    },
+    {
+        "id": "TheGrandMarqu33",
+        "place": "The Grand Marquee",
+        "placeTitle": "The Grand Marquee - Grandeur Unleashed",
+        "image": "https://i.ibb.co/85nCHS6/download-8.jpg",
+        "ratings": 4.8,
+        "brideName": "Isabella",
+        "groomName": "Liam",
+        "description": "Experience grandeur unleashed at The Grand Marquee, a venue where Isabella and Liam celebrated their love story. With a rating of 4.8, this venue offers expansive spaces and luxurious settings for a grand celebration. The Grand Marquee - where every moment is monumental."
+    },
+    {
+        "id": "OceanBreeze",
+        "place": "Ocean Breeze",
+        "placeTitle": "Ocean Breeze - Coastal Elegance",
+        "image": "https://i.ibb.co/FBnvhdY/download-9.jpg",
+        "ratings": 4.6,
+        "brideName": "Ava",
+        "groomName": "Ethan",
+        "description": "Celebrate coastal elegance at Ocean Breeze, a venue with sweeping views of the sea. Ava and Ethan chose this venue, with a rating of 4.6, for their nautical-themed wedding celebration. From beachside ceremonies to elegant receptions, Ocean Breeze sets the stage for a maritime love story."
+    },
+    {
+        "id": "MysticMansion",
+        "place": "Mystic Mansion",
+        "placeTitle": "Mystic Mansion - Enchanted Romance",
+        "image": "https://i.ibb.co/0s48Ytt/download-10.jpg",
+        "ratings": 4.7,
+        "brideName": "Ella",
+        "groomName": "Daniel",
+        "description": "Embark on an enchanted romance at Mystic Mansion, a venue that exudes magic and allure. Ella and Daniel celebrated their love story in the captivating surroundings of this venue with a rating of 4.7. Mystic Mansion - where every moment is a fairy-tale come to life."
+    },
+    {
+        "id": "RoyalGard3ns",
+        "place": "Royal Gardens",
+        "placeTitle": "Royal Gardens - Botanical Bliss",
+        "image": "https://i.ibb.co/ZTQkbTb/download-11.jpg",
+        "ratings": 4.9,
+        "brideName": "Lily",
+        "groomName": "Henry",
+        "description": "Immerse yourself in botanical bliss at Royal Gardens, a venue that combines nature's beauty with regal elegance. Lily and Henry celebrated their love story amidst lush greenery with a rating of 4.9. Royal Gardens - where love blossoms in the heart of nature."
+    },
+    {
+        "id": "GrandHyatt",
+        "place": "Grand Hyatt",
+        "placeTitle": "Grand Hyatt - Luxury Redefined",
+        "image": "https://i.ibb.co/54SqyMn/download-12.jpg",
+        "ratings": 4.7,
+        "brideName": "Scarlett",
+        "groomName": "Christopher",
+        "description": "Luxury redefined at Grand Hyatt, where Scarlett and Christopher celebrated their love in style. With a rating of 4.7, this venue offers opulent spaces and world-class service for a wedding that exceeds expectations. Grand Hyatt - where every moment is a celebration of elegance."
+    }
+]

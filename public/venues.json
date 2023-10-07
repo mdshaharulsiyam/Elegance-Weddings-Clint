@@ -1,0 +1,146 @@
+[
+    {
+        "id": "R4diss0n123",
+        "place": "Radisson",
+        "placeTitle": "Qaiserbagh, Lucknow is a Banquet Hall",
+        "image": "https://i.ibb.co/FWJzLpd/radisson-kaiserbagh-xepji.jpg",
+        "ratings": 4.5,
+        "reviews": 120,
+        "description": "Celebrate your dream wedding at the luxurious Radisson venue. With elegant spaces and impeccable service, we ensure your special day is nothing short of perfection. From grand ballrooms to intimate settings, Radisson offers versatility to match your vision. Enjoy a culinary journey with our world-class catering. Our venue is not just a location; it's the beginning of your happily ever after.",
+        "venuePolicies": {
+            "advance": "50%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$200 per night",
+            "averagePriceFood": "$50 per guest"
+        }
+    },
+    {
+        "id": "S4nth0meChVrch",
+        "place": "Santhome Church",
+        "placeTitle": "Chennai, near Marina Beach",
+        "image": "https://i.ibb.co/RYnnz9s/san-thome-basilica-church-chennai-tourism-opening-time-closing.jpg",
+        "ratings": 4.8,
+        "reviews": 150,
+        "description": "Exchange your vows in the divine ambiance of Santhome Church. A historic and spiritual setting, perfect for a wedding ceremony filled with blessings. The architecture and serenity of Santhome Church create a truly magical atmosphere for your special day. Cherish the sacred moments as you start your journey together.",
+        "venuePolicies": {
+            "advance": "40%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "N/A",
+            "averagePriceFood": "N/A"
+        }
+    },
+    {
+        "id": "ITCGrand456",
+        "place": "ITC Grand",
+        "placeTitle": "Goa, is Destination  Wedding Place",
+        "image": "https://i.ibb.co/3kqRdp3/ITC-Gurugram-2.jpg",
+        "ratings": 4.7,
+        "reviews": 130,
+        "description": "Host your grand wedding at the opulent ITC Grand venue. With a blend of luxury and tradition, our venue offers a majestic backdrop for your celebration. From lavish banquets to outdoor gardens, ITC Grand provides a regal setting for your special day. Elevate your wedding experience with our exquisite hospitality and culinary delights.",
+        "venuePolicies": {
+            "advance": "60%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$300 per night",
+            "averagePriceFood": "$70 per guest"
+        }
+    },
+    {
+        "id": "Carav3laB34ch",
+        "place": "Caravela Beach",
+        "placeTitle": "Resort",
+        "image": "https://i.ibb.co/g9qpQC7/423621853.jpg",
+        "ratings": 4.4,
+        "reviews": 110,
+        "description": "Plan your beachfront wedding at Caravela Beach, where sun, sand, and sea come together to create a magical setting. Exchange vows with the sound of waves as your backdrop. Our venue provides a perfect blend of nature and luxury, making your wedding day unforgettable. Experience the charm of a seaside celebration.",
+        "venuePolicies": {
+            "advance": "45%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$250 per night",
+            "averagePriceFood": "$60 per guest"
+        }
+    },
+    {
+        "id": "Munj0h0c34n",
+        "place": "Munjoh Ocean",
+        "placeTitle": "Resort",
+        "image": "https://i.ibb.co/tbzzyD7/beach-wedding-banquet.jpg",
+        "ratings": 4.6,
+        "reviews": 140,
+        "description": "Experience a wedding by the ocean at Munjoh Ocean venue. With breathtaking views and pristine surroundings, Munjoh Ocean offers an idyllic setting for your special day. Our dedicated team ensures every detail is perfect, from the ceremony to the reception. Create memories that last a lifetime at Munjoh Ocean.",
+        "venuePolicies": {
+            "advance": "55%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$280 per night",
+            "averagePriceFood": "$65 per guest"
+        }
+    },
+    {
+        "id": "TheLe3laPalace",
+        "place": "The Leela Palace",
+        "placeTitle": "Udaipur",
+        "image": "https://i.ibb.co/jTQMxzg/inner-courtyard.jpg",
+        "ratings": 4.9,
+        "reviews": 160,
+        "description": "Indulge in luxury at The Leela Palace, the perfect venue for a regal wedding celebration. From opulent ballrooms to exquisite gardens, our venue offers a majestic backdrop for your special day. Immerse yourself in the grandeur of The Leela Palace and create timeless memories.",
+        "venuePolicies": {
+            "advance": "70%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$400 per night",
+            "averagePriceFood": "$90 per guest"
+        }
+    },
+    {
+        "id": "JagMandirPal4ce",
+        "place": "Jag Mandir Palace",
+        "placeTitle": "Udaipur",
+        "image": "https://i.ibb.co/yqGtn57/0225u120008jmweji6067-R-960-660-R5-D-1.jpg",
+        "ratings": 4.7,
+        "reviews": 145,
+        "description": "Celebrate your love story at the enchanting Jag Mandir Palace. Nestled on an island in the midst of a lake, this palace venue exudes romance and grandeur. With its rich history and architectural beauty, Jag Mandir Palace provides an extraordinary setting for your wedding celebration.",
+        "venuePolicies": {
+            "advance": "65%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$350 per night",
+            "averagePriceFood": "$80 per guest"
+        }
+    },
+    {
+        "id": "Fairm0n",
+        "place": "Fairmon",
+        "placeTitle": "Jaipuur",
+        "image": "https://i.ibb.co/tqJXLP1/JAI-490210-Wedding-set-up.jpg",
+        "ratings": 4.6,
+        "reviews": 135,
+        "description": "Experience sophistication at Fairmon, the epitome of luxury for your wedding celebration. With stylish venues and impeccable service, Fairmon ensures an unforgettable experience. From exquisite banquets to picturesque outdoor spaces, our venue offers the perfect canvas for your love story.",
+        "venuePolicies": {
+            "advance": "55%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$280 per night",
+            "averagePriceFood": "$65 per guest"
+        }
+    },
+    {
+        "id": "JaiMahalPal4ce",
+        "place": "Jai Mahal Palace",
+        "placeTitle": "Jaipur",
+        "image": "https://i.ibb.co/b1BJwFh/4bb2baf4d5aeabca9d54a83fea312ce3.jpg",
+        "ratings": 4.8,
+        "reviews": 155,
+        "description": "Step into a world of royalty at Jai Mahal Palace, the perfect venue for a majestic wedding celebration. With its grand architecture and lush gardens, Jai Mahal Palace creates a fairy-tale setting for your special day. Let the splendor of Jai Mahal Palace be the backdrop for your love story.",
+        "venuePolicies": {
+            "advance": "60%",
+            "cancellation": "NO Cancellation",
+            "alcohol": "Not Allowed",
+            "averagePriceRoom": "$300 per night",
+            "averagePriceFood": "$70 per guest"
+        }
+    }
+]

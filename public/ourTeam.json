@@ -1,0 +1,86 @@
+[
+    {
+        "id": "V3nu3s123",
+        "name": "Venues",
+        "image": "https://i.ibb.co/qDWrv52/group-people-are-standing-row-one-them-has-smile-his-face-867452-540.jpg",
+        "teamMembers": [
+            "Alice Johnson",
+            "David Smith",
+            "Ella Rodriguez",
+            "John Davis",
+            "Sophia Anderson"
+        ]
+    },
+    {
+        "id": "Mak3up456",
+        "name": "Makeup",
+        "image": "https://i.ibb.co/ccsSpKT/images-3.jpg",
+        "teamMembers": [
+            "Olivia Williams",
+            "Michael Brown",
+            "Emma Lee",
+            "Andrew White",
+            "Sophie Turner"
+        ]
+    },
+    {
+        "id": "Phot0graphy789",
+        "name": "Photography",
+        "image": "https://i.ibb.co/MG4hGQ2/2248263-1000x0.jpg",
+        "teamMembers": [
+            "Liam Johnson",
+            "Chloe Davis",
+            "Lucas Smith",
+            "Ava Wilson",
+            "Logan Taylor"
+        ]
+    },
+    {
+        "id": "Cat3ringABC",
+        "name": "Catering",
+        "image": "https://i.ibb.co/LdJK36d/istockphoto-564594506-1024x1024.jpg",
+        "teamMembers": [
+            "Sophia Martinez",
+            "Daniel Brown",
+            "Oliver White",
+            "Emily Harris",
+            "Mia Anderson"
+        ]
+    },
+    {
+        "id": "PlanDec0rXYZ",
+        "name": "Planning and Decor",
+        "image": "https://i.ibb.co/j8v1YS6/istockphoto-1340256503-612x612.jpg",
+        "teamMembers": [
+            "Noah Turner",
+            "Aria Martin",
+            "Caleb Wilson",
+            "Sophie Lee",
+            "Ethan Davis"
+        ]
+    },
+    {
+        "id": "MusicDance123",
+        "name": "Music and Dance",
+        "image": "https://i.ibb.co/pKWfZ8c/improvisation-performance-dance-team-young-adorable-girls-moving-to-beat-music-gradient-background-n.webp",
+        "teamMembers": [
+            "Aiden Rodriguez",
+            "Mila Harris",
+            "Gabriel Turner",
+            "Lily Wilson",
+            "Jackson Brown"
+        ]
+    },
+    {
+        "id": "W3ddingR3gistry",
+        "name": "Wedding Registry",
+        "image": "https://i.ibb.co/1qv3JB1/download-14.jpg",
+        "teamMembers": [
+            "Eva Anderson",
+            "Liam White",
+            "Zoe Taylor",
+            "Lucas Davis",
+            "Ava Turner"
+        ]
+    }
+]

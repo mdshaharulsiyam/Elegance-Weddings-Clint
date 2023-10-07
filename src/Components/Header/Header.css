@@ -1,0 +1,26 @@
+.menu .active {
+    color: red;
+    font-size: 20px;
+}
+.menu #mainmenus{
+    position: relative;
+    transition: .5s ease all;
+}
+
+.menu #mainmenus::after {
+    content: '';
+    position: absolute;
+    background: #FF6969;
+    width: 0;
+    height: 3px;
+    transition: .5s ease all;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu #mainmenus.active::after{
+    width: 100%;
+}
+.menu #mainmenus:hover::after {
+    width: 100%;
+}

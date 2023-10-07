@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const HompageGallerySection = ({data}) => {
 const {image,id,brideName,groomName,place,ratings,description}=data;
   return (
-    <div data-aos="flip-right" id='galleryCard' className='w-[24.5%] text-center box-border p-3 bg-white rounded-lg cursor-pointer '>
+    <div data-aos="flip-right" id='galleryCard' className='w-[24%] my-2 text-center box-border p-3 bg-white rounded-lg cursor-pointer '>
       <img id='galleryCardImage' className='object-cover w-full h-52 rounded-lg inline-block mx-auto' src={image} alt="" />
       <h3 className='text-lg font-bold pt-2 flex justify-center items-center gap-2 text-[#FF6969]'>{groomName}<GiLoveMystery className='mt-2'></GiLoveMystery>{brideName}</h3>
       <div className='content'>

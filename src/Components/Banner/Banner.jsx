@@ -4,7 +4,7 @@ import BannerData from './BannerData';
 const Banner = () => {
   const [bannerData,setbannerData]=useState([]);
   useEffect(()=>{
-    fetch('baner.json').then((res)=> res.json()).then((data)=>setbannerData(data))
+    fetch('./baner.json').then((res)=> res.json()).then((data)=>setbannerData(data))
   },[])
   return (
     <div>

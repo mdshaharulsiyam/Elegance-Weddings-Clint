@@ -28,7 +28,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                 <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box">
-                <NavLink id='mainmenus' className={'px-4 bg-[#FCD9D9] rounded-lg active:scale-90 font-semibold text-base py-2 mx-2'} to={'/login'}>login</NavLink>
+                <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
                 </ul>
                 </div>
             </div>

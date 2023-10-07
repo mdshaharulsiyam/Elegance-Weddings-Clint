@@ -1,0 +1,33 @@
+#serviceCard{
+    transition: .5s ease all;
+}
+#serviceCardcaption{
+transition: .6s ease all;
+}
+#serviceCard:hover #serviceCardcaption{
+    top: 45%;
+}
+#servicesectionTitle{
+    position: relative;
+    display: inline-block;
+}
+#servicesectionTitle::after {
+    content: '';
+    position: absolute;
+    background-color: #FF6969;
+    width: 40px;
+    height: 4px;
+    top: 73px;
+    right: -60px;
+    transform: translateY(-50%);
+}
+#servicesectionTitle::before {
+    content: '';
+    position: absolute;
+    background-color: #FF6969;
+    width: 40px;
+    height: 4px;
+    top: 73px;
+    left: -60px;
+    transform: translateY(-50%);
+}

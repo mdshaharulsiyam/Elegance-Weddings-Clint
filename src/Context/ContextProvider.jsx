@@ -1,10 +1,16 @@
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
 import React from 'react'
-const weddingContextProvider = createContext(null)
-
+export const weddingContextProvider = createContext(null)
 const ContextProvider = ({children}) => {
+  const [servicesData,setservicesData] = useState([])
+  useEffect(()=>{
+    fetch('./services.json').then((res)=> res.json()).then((data)=>setservicesData(data))
+  },[])
+  const contextData = {
+    servicesData
+  }
   return (
-    <weddingContextProvider.Provider>
+    <weddingContextProvider.Provider value={contextData}>
         {children}
     </weddingContextProvider.Provider>
   )

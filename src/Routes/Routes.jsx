@@ -9,6 +9,7 @@ import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Gallery from '../Pages/Gallery/Gallery';
 import Login from '../Pages/Login/Login';
+import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
 
     const router = createBrowserRouter([
         {
@@ -31,6 +32,10 @@ import Login from '../Pages/Login/Login';
             {
               path: "/login",
               element: <Login></Login>,
+            },
+            {
+              path: "/ServiceDetails",
+              element: <ServiceDetails></ServiceDetails>,
             },
           ],
         },

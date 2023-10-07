@@ -6,6 +6,7 @@ import Ourgallery from '../../Components/OurGallery/Ourgallery'
 import WhyChooseUs from '../../Components/WhyChooseUs/WhyChooseUs'
 import ContactUs from '../../Components/ContactUs/ContactUs'
 import Venues from '../../Components/Venues/Venues'
+import Ourteam from '../../Components/Ourteam/Ourteam'
 
 const Home = () => {
   document.title="home-Elegance Weddings"
@@ -17,6 +18,7 @@ const Home = () => {
       <Services></Services>
       <Ourgallery></Ourgallery>
       <Venues></Venues>
+      <Ourteam></Ourteam>
     </div>
   )
 }

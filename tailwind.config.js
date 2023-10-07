@@ -7,6 +7,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],git init
+  plugins: [require("daisyui")],
 }
 

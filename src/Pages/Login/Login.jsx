@@ -8,6 +8,9 @@ import Swal from 'sweetalert2';
 const Login = () => {
   const navigate = useNavigate()
   const {signinWithGoogle,signwithpasswordandemail,currentUser,loading}=useContext(weddingContextProvider)
+  const location = useLocation();
+  // const path = location.state
+  console.log(location)
   if (!loading) {
     if (currentUser) {
         Swal.fire({

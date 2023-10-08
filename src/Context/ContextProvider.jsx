@@ -4,29 +4,13 @@ import React from 'react'
 import { app } from "../FireBase/Config";
 import Swal from "sweetalert2";
 import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged,signInWithEmailAndPassword,signOut} from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 export const weddingContextProvider = createContext(null)
 const auth = getAuth(app);
 const ContextProvider = ({ children }) => {
   const Googleprovider = new GoogleAuthProvider();
   const [currentUser, setcurrentUser] = useState(null)
-  const [servicesData, setservicesData] = useState([])
-  const [galleryData, setgalleryData] = useState([])
-  const [venuesData, setvenuesData] = useState([])
   const [loading, setloading] = useState(true)
-  useEffect(() => {
-    setloading(true)
-    fetch('./services.json').then((res) => res.json()).then((data) => setservicesData(data))
-
-  }, [])
-  useEffect(() => {
-    setloading(true)
-    fetch('./gallery.json').then((res) => res.json()).then((data) => setgalleryData(data))
-
-  }, [])
-  useEffect(() => {
-    setloading(true)
-    fetch('./venues.json').then((res) => res.json()).then((data) => setvenuesData(data))
-  }, [])
   const signupuser = (password, email, username) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -107,7 +91,7 @@ const ContextProvider = ({ children }) => {
       Swal.fire({
         position: 'top-end',
         icon: 'success',
-        title: 'user signOut successfully',
+        title: 'user signout successfully',
         showConfirmButton: false,
         timer: 1500
       })
@@ -131,9 +115,6 @@ const ContextProvider = ({ children }) => {
     });
   }, [])
   const contextData = {
-    servicesData,
-    galleryData,
-    venuesData,
     loading,
     signupuser,
     signinWithGoogle,

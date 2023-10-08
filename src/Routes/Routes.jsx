@@ -16,6 +16,7 @@ import PrivetRoute from '../ProvetRoute/PrivetRoute';
 import Cart from '../Pages/Cart/Cart';
 import GalleryDetails from '../Pages/GalleryDetails/GalleryDetails';
 import VanuesDetailspage from '../Pages/VanuesDetailsPage/VanuesDetailspage';
+import Venuespage from '../Pages/Venuespage/Venuespage';
 
     const router = createBrowserRouter([
         {
@@ -33,7 +34,7 @@ import VanuesDetailspage from '../Pages/VanuesDetailsPage/VanuesDetailspage';
             },
             {
               path: "/gallery",
-              element: <Gallery></Gallery>,
+              element:<PrivetRoute><Gallery></Gallery></PrivetRoute>,
             },
             {
               path: "/login",
@@ -61,7 +62,7 @@ import VanuesDetailspage from '../Pages/VanuesDetailsPage/VanuesDetailspage';
             },
             {
               path: "/venues",
-              element: <ContactPage></ContactPage>,
+              element: <Venuespage></Venuespage>,
             },
             {
               path: "/signup",

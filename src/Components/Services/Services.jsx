@@ -1,9 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { weddingContextProvider } from '../../Context/ContextProvider'
 import ServiceCard from './ServiceCard'
 
 const Services = () => {
-    const {servicesData} = useContext(weddingContextProvider)
+  const [servicesData, setservicesData] = useState([])
+  useEffect(() => {
+    fetch('./services.json').then((res) => res.json()).then((data) => setservicesData(data))
+
+  }, [])
   return (
     <div className='container mx-auto text-center'>
       <h2 id='servicesectionTitle' className='text-5xl font-semibold italic text-[#FF6969] py-10'>our services</h2>

@@ -12,7 +12,7 @@ const ServiceCard = ({service}) => {
       <div id='serviceCardcaption' className=' absolute w-full h-full top-[70%] left-0 bg-black bg-opacity-70 text-white pt-2'>
         <h3 className='text-xl font-semibold italic'>{category}</h3>
         <h4>{name}</h4>
-        <Link to={'/Details'}><button className='font-semibold text-base italic mt-5 bg-[#CD979A] p-2 px-7 rounded'>more..</button></Link>
+        <Link to={`/ServiceDetails/${id}`}><button className='font-semibold text-base italic mt-5 bg-[#CD979A] p-2 px-7 rounded'>more..</button></Link>
       </div>
     </div>
   )

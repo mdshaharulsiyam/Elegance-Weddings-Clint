@@ -9,9 +9,11 @@ import Home from '../Pages/Home/Home';
 import About from '../Pages/About/About';
 import Gallery from '../Pages/Gallery/Gallery';
 import Login from '../Pages/Login/Login';
-import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
 import ContactPage from '../Pages/ContactPage/ContactPage';
 import SignUp from '../Pages/SignUp/SignUp';
+import ServicesDetails from '../Pages/ServicesDetails/ServicesDetails';
+import PrivetRoute from '../ProvetRoute/PrivetRoute';
+import Cart from '../Pages/Cart/Cart';
 
     const router = createBrowserRouter([
         {
@@ -36,8 +38,12 @@ import SignUp from '../Pages/SignUp/SignUp';
               element: <Login></Login>,
             },
             {
-              path: "/Details",
-              element: <ServiceDetails></ServiceDetails>,
+              path: "/ServiceDetails/:id",
+              element: <PrivetRoute><ServicesDetails></ServicesDetails></PrivetRoute>,
+            },
+            {
+              path: "/cart",
+              element: <PrivetRoute><Cart></Cart></PrivetRoute>,
             },
             {
               path: "/contact",

@@ -123,6 +123,7 @@ const ContextProvider = ({ children }) => {
         setloading(false)
       }else{
         setcurrentUser(null)
+        setloading(false)
       }
       return ()=>{
         unsubscribe()

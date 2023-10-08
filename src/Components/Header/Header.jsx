@@ -9,6 +9,9 @@ const Header = () => {
     <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/about'}>about</NavLink>
     <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/gallery'}>gallery</NavLink>
     <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/contact'}>Contact Us</NavLink>
+    {
+        currentUser && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/cart'}>cart</NavLink>
+    }
     </>
     return (
         <div className='container mx-auto text-[#FF6969]'>

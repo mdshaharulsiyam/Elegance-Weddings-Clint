@@ -15,6 +15,7 @@ import ServicesDetails from '../Pages/ServicesDetails/ServicesDetails';
 import PrivetRoute from '../ProvetRoute/PrivetRoute';
 import Cart from '../Pages/Cart/Cart';
 import GalleryDetails from '../Pages/GalleryDetails/GalleryDetails';
+import VanuesDetailspage from '../Pages/VanuesDetailsPage/VanuesDetailspage';
 
     const router = createBrowserRouter([
         {
@@ -45,6 +46,10 @@ import GalleryDetails from '../Pages/GalleryDetails/GalleryDetails';
             {
               path: "/gallerydetails/:id",
               element: <PrivetRoute><GalleryDetails></GalleryDetails></PrivetRoute>,
+            },
+            {
+              path: "/vanuesDetails/:id",
+              element: <PrivetRoute><VanuesDetailspage></VanuesDetailspage></PrivetRoute>,
             },
             {
               path: "/cart",

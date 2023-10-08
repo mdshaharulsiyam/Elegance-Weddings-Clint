@@ -19,7 +19,12 @@ const Login = () => {
           showConfirmButton: false,
           timer: 1500
         })
-        navigate('/')
+        if (location.state) {
+          return navigate(`${location.state}`)
+        }else{
+          return navigate('/')
+        }
+        
     }
   }
   const [showbutton, setShowBtn] = useState(true)

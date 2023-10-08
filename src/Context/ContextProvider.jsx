@@ -112,6 +112,7 @@ const ContextProvider = ({ children }) => {
     signwithpasswordandemail,
     handelsignout,
     signOut,
+    setcurrentUser
   }
   return (
     <weddingContextProvider.Provider value={contextData}>

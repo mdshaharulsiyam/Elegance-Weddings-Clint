@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { weddingContextProvider } from '../../Context/ContextProvider'
 import HompageGallerySection from './HompageGallerySection'
 import { Link } from 'react-router-dom'
 
 const Ourgallery = () => {
+  const [galeryDatas,setgalleryDatas]=useState()
     const {galleryData}=useContext(weddingContextProvider)
     
   return (

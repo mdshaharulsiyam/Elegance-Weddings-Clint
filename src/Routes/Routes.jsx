@@ -14,6 +14,7 @@ import SignUp from '../Pages/SignUp/SignUp';
 import ServicesDetails from '../Pages/ServicesDetails/ServicesDetails';
 import PrivetRoute from '../ProvetRoute/PrivetRoute';
 import Cart from '../Pages/Cart/Cart';
+import GalleryDetails from '../Pages/GalleryDetails/GalleryDetails';
 
     const router = createBrowserRouter([
         {
@@ -40,6 +41,10 @@ import Cart from '../Pages/Cart/Cart';
             {
               path: "/ServiceDetails/:id",
               element: <PrivetRoute><ServicesDetails></ServicesDetails></PrivetRoute>,
+            },
+            {
+              path: "/gallerydetails/:id",
+              element: <PrivetRoute><GalleryDetails></GalleryDetails></PrivetRoute>,
             },
             {
               path: "/cart",

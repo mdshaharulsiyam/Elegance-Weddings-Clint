@@ -16,10 +16,10 @@ e.preventDefault()
                     <li>Call us: +880******** / +880********* /</li>
                     <li>Skype id: EleganceWedding</li>
                 </ul>
-                <p>
+                <div>
                     <p className='text-[#FF6969] italic pb-2'>Sales Office Address:</p>
                     103B, B-37, Gokuldham, Goregaon East, Mumbai – 400063.
-                    </p>
+                    </div>
             </div>
             <div className='w-[49%] flex justify-center items-center'>
         <form onSubmit={handelContact} className='w-[400px] mx-auto text-center p-8 bg-gray-200 rounded-lg'>

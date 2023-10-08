@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { HiEye, HiEyeOff } from 'react-icons/hi';
 import { AiFillGoogleCircle,AiFillGithub } from 'react-icons/ai';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { weddingContextProvider } from '../../Context/ContextProvider';
 import Swal from 'sweetalert2';
 
@@ -9,7 +9,6 @@ const Login = () => {
   const navigate = useNavigate()
   const {signinWithGoogle,signwithpasswordandemail,currentUser,loading}=useContext(weddingContextProvider)
   const location = useLocation();
-  // const path = location.state
   console.log(location)
   if (!loading) {
     if (currentUser) {

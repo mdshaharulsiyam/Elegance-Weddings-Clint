@@ -3,6 +3,19 @@ import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
 import { weddingContextProvider } from '../../Context/ContextProvider'
 const Header = () => {
+    const signoutuser = ()=>{
+        handelsignout().then(() => {
+            Swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'user signout successfully',
+              showConfirmButton: false,
+              timer: 1500
+            })
+          }).catch((error) => {
+            
+          });
+    }
     const {currentUser,handelsignout}=useContext(weddingContextProvider)
     const navlinks = <>
     <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2  mx-2'} to={'/'}>Home</NavLink>
@@ -38,7 +51,7 @@ const Header = () => {
                 <div className="navbar-end">
                 <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box">
                {
-                currentUser? <div className='flex justify-center items-center'><h1 className='text-xl font-bold text-black'>{currentUser}</h1> <button onClick={handelsignout
+                currentUser? <div className='flex justify-center items-center'><h1 className='text-xl font-bold text-black'>{currentUser}</h1> <button onClick={signoutuser
                 } className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'}>Sign out</button></div>: <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
                }
                 </ul>

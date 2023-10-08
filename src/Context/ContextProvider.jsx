@@ -87,17 +87,7 @@ const ContextProvider = ({ children }) => {
     });
   }
   const handelsignout = ()=>{
-    signOut(auth).then(() => {
-      Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'user signout successfully',
-        showConfirmButton: false,
-        timer: 1500
-      })
-    }).catch((error) => {
-      
-    });
+    return signOut(auth)
   }
   useEffect(() => {
     setloading(true)
@@ -120,7 +110,8 @@ const ContextProvider = ({ children }) => {
     signinWithGoogle,
     currentUser,
     signwithpasswordandemail,
-    handelsignout
+    handelsignout,
+    signOut,
   }
   return (
     <weddingContextProvider.Provider value={contextData}>

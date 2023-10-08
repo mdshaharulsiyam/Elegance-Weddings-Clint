@@ -3,16 +3,16 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase
 import React from 'react'
 import { app } from "../FireBase/Config";
 import Swal from "sweetalert2";
-import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged, GithubAuthProvider} from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, onAuthStateChanged,signInWithEmailAndPassword,signOut} from "firebase/auth";
 export const weddingContextProvider = createContext(null)
 const auth = getAuth(app);
 const ContextProvider = ({ children }) => {
-  const provider = new GoogleAuthProvider();
+  const Googleprovider = new GoogleAuthProvider();
   const [currentUser, setcurrentUser] = useState(null)
   const [servicesData, setservicesData] = useState([])
   const [galleryData, setgalleryData] = useState([])
   const [venuesData, setvenuesData] = useState([])
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(true)
   useEffect(() => {
     setloading(true)
     fetch('./services.json').then((res) => res.json()).then((data) => setservicesData(data))
@@ -26,14 +26,13 @@ const ContextProvider = ({ children }) => {
   useEffect(() => {
     setloading(true)
     fetch('./venues.json').then((res) => res.json()).then((data) => setvenuesData(data))
-    setloading(false)
   }, [])
   const signupuser = (password, email, username) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         updateProfile(auth.currentUser, {
-          displayName: `${user}`,
+          displayName: `${username}`,
         }).then(() => {
           setcurrentUser(user.displayName)
           Swal.fire({
@@ -50,14 +49,16 @@ const ContextProvider = ({ children }) => {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorMessage)
+        Swal.fire(
+          'opps!!',
+          `${errorMessage}`,
+          'error'
+        )
       });
   }
   const signinWithGoogle = () => {
-    signInWithPopup(auth, provider)
+    signInWithPopup(auth, Googleprovider)
       .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
         const user = result.user;
         setcurrentUser(user.displayName)
         Swal.fire({
@@ -71,28 +72,57 @@ const ContextProvider = ({ children }) => {
       }).catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        const email = error.customData.email;
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        console.log(errorCode, errorMessage, email, credential)
+        Swal.fire(
+          'opps!!',
+          `${errorMessage}`,
+          'error'
+        )
       });
   }
-  const signinwithgithub = ()=>{
-    signInWithPopup(auth, provider)
-  .then((result) => {
-    const credential = GithubAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
-    const user = result.user;
-  }).catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    const email = error.customData.email;
-    const credential = GithubAuthProvider.credentialFromError(error);
-  });
+  const signwithpasswordandemail = (email,password)=>{
+    signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      setcurrentUser(user.displayName)
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'logged in successfully',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      Swal.fire(
+        'opps!!',
+        `${errorMessage}`,
+        'error'
+      )
+    });
+  }
+  const handelsignout = ()=>{
+    signOut(auth).then(() => {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'user signOut successfully',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }).catch((error) => {
+      
+    });
   }
   useEffect(() => {
+    setloading(true)
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setcurrentUser(user.displayName)
+        setloading(false)
+      }else{
+        setcurrentUser(null)
       }
       return ()=>{
         unsubscribe()
@@ -106,7 +136,9 @@ const ContextProvider = ({ children }) => {
     loading,
     signupuser,
     signinWithGoogle,
-    currentUser
+    currentUser,
+    signwithpasswordandemail,
+    handelsignout
   }
   return (
     <weddingContextProvider.Provider value={contextData}>

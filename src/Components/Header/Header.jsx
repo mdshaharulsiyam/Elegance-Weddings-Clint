@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
+import { weddingContextProvider } from '../../Context/ContextProvider'
 const Header = () => {
+    const {currentUser,handelsignout}=useContext(weddingContextProvider)
     const navlinks = <>
     <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2  mx-2'} to={'/'}>Home</NavLink>
     <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/about'}>about</NavLink>
@@ -29,7 +31,10 @@ const Header = () => {
                 </div>
                 <div className="navbar-end">
                 <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box">
-                <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
+               {
+                currentUser? <div className='flex justify-center items-center'><h1 className='text-xl font-bold text-black'>{currentUser}</h1> <button onClick={handelsignout
+                } className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'}>Sign out</button></div>: <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
+               }
                 </ul>
                 </div>
             </div>

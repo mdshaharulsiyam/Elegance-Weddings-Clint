@@ -21,12 +21,13 @@ const Header = () => {
         <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2  mx-2'} to={'/'}>Home</NavLink>
         <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/about'}>about</NavLink>
         <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/venues'}>venues</NavLink>
-        {
-            currentUser && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/gallery'}>gallery</NavLink>
-        }
         <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/contact'}>Contact Us</NavLink>
         {
-            currentUser && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/cart'}>cart</NavLink>
+            currentUser && <>
+            <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/gallery'}>gallery</NavLink>
+            <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/cart'}>cart</NavLink>
+            <h1 className='sm:hidden block text-xl mx-2 font-bold text-black'>{currentUser}</h1>
+            </>
         }
     </>
     return (
@@ -53,12 +54,12 @@ const Header = () => {
                         {
                             currentUser ? <div className='flex justify-center items-center'>
                                
-                                <h1 className='text-xl mx-2 font-bold text-black'>{currentUser}</h1>
+                                <h1 className='hidden sm:block text-xl mx-2 font-bold text-black'>{currentUser}</h1>
                                 {
                                     currentUserphoto && <img className='w-8 h-8 rounded-full' src={currentUserphoto} alt="" />
                                 }
                                  <button onClick={signoutuser
-                                } className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'}>Sign out</button></div> : <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
+                                } className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'}>logout</button></div> : <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
                         }
                     </ul>
                 </div>

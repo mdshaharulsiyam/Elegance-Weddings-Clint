@@ -17,7 +17,7 @@ const GalleryDataCard = ({data}) => {
         <h3 className='text-[#FC8181] text-xl font-bold'>{placeTitle}</h3>
        <p className='flex justify-start items-center gap-2 text-lg font-bold py-3'>rating {ratings} <AiFillStar></AiFillStar></p>
        <p className='font-semibold text-base tracking-[1px]'>{description}</p>
-       <button onClick={handelbtn} className='btn bg-pink-600 my-2 text-white'>back to home</button>
+       <button onClick={handelbtn} className='btn bg-pink-600 my-2 text-white'>back to previous</button>
     </div>
   )
 }

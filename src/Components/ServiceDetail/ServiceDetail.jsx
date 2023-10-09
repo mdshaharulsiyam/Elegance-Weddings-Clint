@@ -12,7 +12,7 @@ const ServiceDetail = ({data}) => {
       <img className='w-full' src={image} alt="" />
       <div className='flex justify-start gap-4 items-center my-4'><p className='px-4 py-2 rounded-lg bg-[#FC8181] bg-opacity-70 text-lg font-semibold'>{category}</p> <h3 className='text-[#FC8181] text-xl font-bold '>{name}</h3></div>
       <p className='font-semibold text-base tracking-[1px]'>{description}</p>
-      <button onClick={handelbtn} className='btn bg-pink-600 my-2 text-white'>back to home</button>
+      <button onClick={handelbtn} className='btn bg-pink-600 my-2 text-white'>back to previous</button>
     </div>
   )
 }

@@ -58,7 +58,7 @@ const VenuesDetailsCard = ({ data }) => {
             </div>
             <div className='flex justify-center items-center gap-4'>
                 <button onClick={addtocart} className='btn bg-pink-600 bg-opacity-50 text-xl font-bold uppercase my-4 block '>add to cart</button>
-                <button onClick={handelbtn} className='btn bg-pink-600 bg-opacity-50 text-xl font-bold uppercase my-4 block '>back to home</button>
+                <button onClick={handelbtn} className='btn bg-pink-600 bg-opacity-50 text-xl font-bold uppercase my-4 block '>back to previous</button>
             </div>
         </div>
     )

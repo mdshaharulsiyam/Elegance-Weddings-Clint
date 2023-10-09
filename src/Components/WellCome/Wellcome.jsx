@@ -4,7 +4,7 @@ import { BsArrowRight } from 'react-icons/bs';
 const Wellcome = () => {
     return (
         <div className='mx-auto container flex flex-wrap justify-center items-center gap-[2%] py-8 my-10'>
-            <div data-aos="zoom-in-right" className='md:w-[49%] w-full'>
+            <div data-aos="fade-up" className='md:w-[49%] w-full'>
                 <img src="./wellcomeimg.jpg" alt="" />
             </div>
             <div className='md:w-[49%] w-full border-l-2 border-[#FF6969] p-2'>

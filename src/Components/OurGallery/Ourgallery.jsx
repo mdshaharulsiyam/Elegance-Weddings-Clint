@@ -13,7 +13,7 @@ const Ourgallery = () => {
     <div className='text-center mx-auto container py-12 '>
         <h2 className='py-10 text-5xl font-bold text-[#FF6969]'>OUR GALLERY <br /><span className='italic font-normal'>Photos</span></h2>
       
-      <div className='flex justify-start items-center gap-[1%] flex-wrap'>
+      <div className='flex flex-wrap justify-center items-center lg:gap-[1%] md:gap-[2%] '>
         {
             gallerySectionData.slice(0,8).map(data=> <HompageGallerySection key={data.id} data={data}></HompageGallerySection>)
         }

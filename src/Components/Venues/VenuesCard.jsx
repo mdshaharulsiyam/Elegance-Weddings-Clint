@@ -8,7 +8,7 @@ const VenuesCard = ({venue}) => {
     }
   return (
     <div data-aos="zoom-in" id='VenuesCard' style={style} className='max-w-sm relative overflow-hidden rounded hover:scale-110 cursor-pointer' >
-      <img className='w-96 h-60 object-cover' src={image} alt="" />
+      <img className='lg:w-96 w-96  md:w-80 h-60 object-cover' src={image} alt="" />
       <div id='VenuesCardcaption' className=' absolute w-full h-full top-[70%] left-0 bg-black bg-opacity-70 text-white pt-2'>
         <h3 className='text-xl font-semibold italic'>{place}</h3>
         <h4>{placeTitle}</h4>

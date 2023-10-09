@@ -15,12 +15,12 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b>Answer </b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A : {}
 
-<i>Write your explanation here</i>
+<i>first declar let greeting variable  value undefined  then reassigns greeting as a empty objrct we can reassigns let variable because of reassigns greeting variable value changed to a empty object</i>
 
 </p>
 </details>
@@ -40,12 +40,12 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b> Answer </b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:C: `"12"`
 
-<i>Write your explanation here</i>
+<i>+ operator is additional operator there we try to additon a string and a number; W + operator with a string and a number converts the number to a string and concatenates the two values</i>
 
 </p>
 </details>
@@ -66,12 +66,12 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
+<details><summary><b> Answer </b></summary>
 <p>
 
-#### Answer: ?
+#### Answer:  A: ['🍕', '🍫', '🥑', '🍔']
 
-<i>Write your explanation here</i>
+<i>we declar an object info with a property favoriteFood assigned the value of the first element of the food array its does not tack reference of food array thats why changing value in info objects doesn't effects on food array</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>calling the sayHi() function without passing any argument, the name parameter inside the function becomes undefined</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>first we loop nums array and for every array value we assigned value to num peramitter then its checks the variable num is ture or not if its true then count is incremented by 1.</i>
 
 </p>
 </details>

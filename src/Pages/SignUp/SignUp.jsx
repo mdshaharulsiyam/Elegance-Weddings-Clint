@@ -21,6 +21,7 @@ const SignUp = () => {
           navigate('/')
       }
     }
+    
     const style = {
         background: `url('loginbackgroundimg.png')`,
         backgroundSize: 'cover',
@@ -41,7 +42,7 @@ const SignUp = () => {
         e.preventDefault();
         const password = e.target.password.value;
         const email = e.target.email.value;
-        const username = e.target.email.username;
+        const username = e.target.username.value;
 
         const passwordLength = /.{6,}/;
         const specialCharacter = /[-’/`~!#*$@_%+=.,^&(){}[\]|;:”<>?\\]/g;
@@ -76,8 +77,10 @@ const SignUp = () => {
                 <div >
 
                     <h3 className='text-center text-white mb-10 italic text-5xl'>wellcome</h3>
-                    <div className='text-center bg-black bg-opacity-70 rounded shadow-2xl  pb-20'>
-
+                    <div className='text-center relative bg-black bg-opacity-70 rounded shadow-2xl  pb-20'>
+                    {
+                      loading &&  <span className="loading absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-10 text-center w-20 loading-spinner text-error"></span>
+                    }
                         <form onSubmit={formSubmit}>
                             <h2 className='text-center text-white italic text-xl py-8'>Sign up</h2>
                             <p id='error'></p>
@@ -87,7 +90,8 @@ const SignUp = () => {
                             <input required type="email" name='email' placeholder="email" className="input input-bordered outline-white text-xl text-white bg-black bg-opacity-60 my-2 input-secondary w-full max-w-xs" />
                             <label className='relative'>
                                 <input required id='password' name='password' type="password" placeholder="password" className="input input-bordered text-xl outline-white text-white bg-black bg-opacity-60 my-2 input-secondary w-full max-w-xs" /><span onClick={showPassword} className='text-2xl cursor-pointer active:scale-90 text-white absolute right-2 top-[50%] -translate-y-[50%]'>{showbutton ? <HiEyeOff></HiEyeOff> : <HiEye></HiEye>}</span>
-                            </label>
+                            </label><br />
+
                             <button className="block mx-auto px-32 py-2 mt-10 active:scale-90 bg-white bg-opacity-30 text-black font-extrabold text-lg rounded-lg">sign up</button>
                         </form>
 

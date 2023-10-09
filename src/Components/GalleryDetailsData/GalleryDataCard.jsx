@@ -6,7 +6,7 @@ const GalleryDataCard = ({data}) => {
     const {id,place,placeTitle,image,ratings,brideName,groomName,description}=data;
     const navigate = useNavigate()
     const handelbtn =()=>{
-        navigate('/')
+        navigate(-1)
     }
   return (
     <div className='my-11'>

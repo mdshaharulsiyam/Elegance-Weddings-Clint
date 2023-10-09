@@ -1,30 +1,29 @@
 import { useContext, useState } from 'react';
 import { HiEye, HiEyeOff } from 'react-icons/hi';
-import { AiFillGoogleCircle,AiFillGithub } from 'react-icons/ai';
+import { AiFillGoogleCircle, AiFillGithub } from 'react-icons/ai';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { weddingContextProvider } from '../../Context/ContextProvider';
 import Swal from 'sweetalert2';
 
 const Login = () => {
   const navigate = useNavigate()
-  const {signinWithGoogle,signwithpasswordandemail,currentUser,loading}=useContext(weddingContextProvider)
+  const { signinWithGoogle, signwithpasswordandemail, currentUser, loading } = useContext(weddingContextProvider)
   const location = useLocation();
-  console.log(location)
   if (!loading) {
     if (currentUser) {
-        Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'user already logged in',
-          showConfirmButton: false,
-          timer: 1500
-        })
-        if (location.state) {
-          return navigate(`${location.state}`)
-        }else{
-          return navigate('/')
-        }
-        
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'logged in successfully',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      if (location.state) {
+        return navigate(`${location.state}`)
+      } else {
+        return navigate('/')
+      }
+
     }
   }
   const [showbutton, setShowBtn] = useState(true)
@@ -47,7 +46,7 @@ const Login = () => {
     e.preventDefault()
     const password = e.target.password.value
     const email = e.target.email.value
-    signwithpasswordandemail(email,password)
+    signwithpasswordandemail(email, password)
   }
   return (
     <div className='py-14 box-border' style={style}>
@@ -55,8 +54,10 @@ const Login = () => {
         <div >
 
           <h3 className='text-center text-white mb-10 italic text-5xl'>wellcome</h3>
-          <div className='text-center bg-black bg-opacity-70 rounded shadow-2xl  pb-20'>
-
+          <div className='text-center bg-black bg-opacity-70 relative rounded shadow-2xl  pb-20'>
+            {
+              loading && <span className="loading absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-10 text-center w-20 loading-spinner text-error"></span>
+            }
             <form onSubmit={formSubmit}>
               <h2 className='text-center text-white italic text-xl py-8'>login</h2>
               <input type="email" name='email' placeholder="email" className="input input-bordered outline-white text-xl text-white bg-black bg-opacity-60 my-2 input-secondary w-full max-w-xs" />

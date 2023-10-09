@@ -5,7 +5,7 @@ const ServiceDetail = ({data}) => {
     const {id,category,name,description,image}=data;
     const navigate = useNavigate()
     const handelbtn =()=>{
-        navigate('/')
+        navigate(-1)
     }
   return (
     <div className='my-11'>

@@ -8,7 +8,7 @@ const VenuesDetailsCard = ({ data }) => {
     const { advance, cancellation, alcohol, averagePriceRoom, averagePriceFood } = venuePolicies;
     const navigate = useNavigate()
     const handelbtn = () => {
-        navigate('/')
+        navigate(-1)
     }
     const addtocart = () => {
         let cart = localStorage.getItem('cart')

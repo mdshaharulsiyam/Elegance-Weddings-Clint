@@ -6,7 +6,7 @@ const Errorelemt = () => {
   console.log(routeerror)
   return (
     <div>
-      <h2>page not found</h2>
+      <h2>{routeerror}</h2>
     </div>
   )
 }

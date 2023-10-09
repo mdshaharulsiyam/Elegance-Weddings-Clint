@@ -3,31 +3,31 @@ import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
 import { weddingContextProvider } from '../../Context/ContextProvider'
 const Header = () => {
-    const signoutuser = ()=>{
+    const signoutuser = () => {
         handelsignout().then(() => {
             Swal.fire({
-              position: 'top-end',
-              icon: 'success',
-              title: 'user signout successfully',
-              showConfirmButton: false,
-              timer: 1500
+                position: 'top-end',
+                icon: 'success',
+                title: 'user signout successfully',
+                showConfirmButton: false,
+                timer: 1500
             })
-          }).catch((error) => {
-            
-          });
+        }).catch((error) => {
+
+        });
     }
-    const {currentUser,handelsignout}=useContext(weddingContextProvider)
+    const { currentUser, handelsignout, currentUserphoto } = useContext(weddingContextProvider)
     const navlinks = <>
-    <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2  mx-2'} to={'/'}>Home</NavLink>
-    <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/about'}>about</NavLink>
-    <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/venues'}>venues</NavLink>
-    {
-      currentUser  && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/gallery'}>gallery</NavLink>
-    }
-    <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/contact'}>Contact Us</NavLink>
-    {
-        currentUser && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/cart'}>cart</NavLink>
-    }
+        <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2  mx-2'} to={'/'}>Home</NavLink>
+        <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/about'}>about</NavLink>
+        <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/venues'}>venues</NavLink>
+        {
+            currentUser && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/gallery'}>gallery</NavLink>
+        }
+        <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/contact'}>Contact Us</NavLink>
+        {
+            currentUser && <NavLink id='mainmenus' className={'px-4 active:scale-90 font-semibold text-base py-2 mx-2'} to={'/cart'}>cart</NavLink>
+        }
     </>
     return (
         <div className='container mx-auto text-[#FF6969]'>
@@ -45,16 +45,22 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                    {navlinks}
+                        {navlinks}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box">
-               {
-                currentUser? <div className='flex justify-center items-center'><h1 className='text-xl font-bold text-black'>{currentUser}</h1> <button onClick={signoutuser
-                } className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'}>Sign out</button></div>: <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
-               }
-                </ul>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content rounded-box">
+                        {
+                            currentUser ? <div className='flex justify-center items-center'>
+                               
+                                <h1 className='text-xl mx-2 font-bold text-black'>{currentUser}</h1>
+                                {
+                                    currentUserphoto && <img className='w-8 h-8 rounded-full' src={currentUserphoto} alt="" />
+                                }
+                                 <button onClick={signoutuser
+                                } className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'}>Sign out</button></div> : <NavLink id='mainmenus' className={'font-extrabold px-4 bg-[#e1c0c0] rounded-lg active:scale-90 text-base py-2 mx-2'} to={'/login'}>login</NavLink>
+                        }
+                    </ul>
                 </div>
             </div>
         </div>

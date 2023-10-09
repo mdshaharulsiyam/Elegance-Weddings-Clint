@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div className='bg-[#f2dfdf] py-10 mt-10'>
-            <div className='container mx-auto flex justify-center items-center gap-[2%]'>
-                <div className='w-[60%]'>
-                    <h3 className='text-5xl text-[#FF6969] opacity-80 italic'>Our wedding planners will leave you breathless on your special day.</h3>
+            <div className='container mx-auto flex justify-center md:flex-row flex-col items-center gap-[2%]'>
+                <div className='md:w-[60%] w-full px-2 md:px-0 my-4 md:my-0'>
+                    <h3 className='md:text-5xl text-3xl text-[#FF6969] opacity-80 italic'>Our wedding planners will leave you breathless on your special day.</h3>
                     <span className='flex justify-between items-center font-semibold pt-8 opacity-80'>
                         <p>Copyright Dotcreativemarket</p>
                         <Link to={'#'}>Terms of Use</Link>
                         <Link to={'#'}>Privacy Policy</Link>
                     </span>
                 </div>
-                <div className='w-[38%] flex justify-end'>
+                <div className='md:w-[38%] w-full flex md:justify-end justify-start'>
                    <div>
                    <h4 className='uppercase text-base font-semibold'>Site map</h4>
                     <div>

@@ -4,10 +4,10 @@ import { BsArrowRight } from 'react-icons/bs';
 const Wellcome = () => {
     return (
         <div className='mx-auto container flex flex-wrap justify-center items-center gap-[2%] py-8 my-10'>
-            <div data-aos="zoom-in-right" className='w-[49%]'>
+            <div data-aos="zoom-in-right" className='md:w-[49%] w-full'>
                 <img src="./wellcomeimg.jpg" alt="" />
             </div>
-            <div className='w-[49%] border-l-2 border-[#FF6969] p-2'>
+            <div className='md:w-[49%] w-full border-l-2 border-[#FF6969] p-2'>
                 <h2 data-aos="zoom-out" className='text-[#FF6969] text-3xl font-semibold py-5 pt-0'>WELCOME <br /> <span className='font-normal italic'> to Our Site</span></h2>
                 <p data-aos="fade-left"
                     data-aos-anchor="#example-anchor"
